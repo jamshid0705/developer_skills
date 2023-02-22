@@ -51,3 +51,18 @@
 // const b = [4, 5, 6];
 // const c = a.concat(b);
 // console.log(c);
+
+////////////////////// 62 Coding challenge 1 //////////////////////
+
+const arr1 = [17, 21, 23];
+
+const printForecast = function (arr1) {
+  let sum='';
+  for (let i = 0; i < arr1.length; i++) {
+    sum += ` ... ${arr1[i]}C in ${i + 1} day${i + 1 >= 2 ? "'s" : " "}`;
+  }
+  return sum
+};
+
+const a=printForecast(arr1)
+console.log(a)
